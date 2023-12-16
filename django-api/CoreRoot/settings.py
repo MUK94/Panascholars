@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'core.user',
     'rest_framework',
     'rest_framework_simplejwt',
-
+    'core.auth',
+    'core.post',
+    # 'django-extensions',
 ]
 
 REST_FRAMEWORK = {
@@ -87,14 +89,14 @@ WSGI_APPLICATION = 'CoreRoot.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'coredb',
-        'USER': 'core',
-        'PASSWORD': 'restapi@',
-        'HOST': 'localhost',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'coredb',
+        # 'USER': 'core',
+        # 'PASSWORD': 'restapi@',
+        # 'HOST': 'localhost',
+        # 'PORT': 5432,
     }
 }
 
